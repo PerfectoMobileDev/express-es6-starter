@@ -1,4 +1,6 @@
 import React from 'react';
+
+import EmptySpace from '../modules/EmptySpace';
 import {Table, TBody, TR, TD} from 'oy-vey';
 
 
@@ -15,6 +17,10 @@ export default (props) => {
         margin: '0px auto',
         backgroundColor: '#edeff4'}}>
       <TBody>
+        <TR>
+          <TD><EmptySpace height="40"/></TD>
+        </TR>
+
         <TR>
           <TD align="center">
 
@@ -39,6 +45,10 @@ export default (props) => {
             </Table>
 
           </TD>
+        </TR>
+
+        <TR>
+          <TD><EmptySpace height="40"/></TD>
         </TR>
 
         {/* We don't care to run validation on this img tag, so leave as is

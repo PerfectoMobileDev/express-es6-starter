@@ -19,7 +19,7 @@ const Email = ({name, history}) => {
       <Body>
       <Info name={name}/>
       <Rate/>
-      <Bars/>
+      <Bars history={history}/>
       </Body>
 
       <Footer color="#134ac0"/>

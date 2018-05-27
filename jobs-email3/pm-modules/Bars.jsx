@@ -1,28 +1,27 @@
 import React from 'react';
+
+import SmallTitle from './SmallTitle';
 import {Table, TBody, TR, TD} from 'oy-vey';
 
 import EmptySpace from '../modules/EmptySpace.jsx';
 
 
-const Bars = (props) => {
-  const textStyle = {
-    color: '#42444c',
-    fontFamily: 'Arial',
-    fontSize: '18px'
-  };
+const Bars = ({history}) => {
 
   return (
     <Table width="100%">
       <TBody>
         <TR>
-          <TD
-            align="center"
-            style={textStyle}>
-            <EmptySpace height={20} />
-            Bars
-            <EmptySpace height={20} />
+          <TD>
+            <SmallTitle title={'HISTORY'}/>
           </TD>
         </TR>
+
+        <TR>
+          <TD>
+          </TD>
+        </TR>
+
       </TBody>
     </Table>
   );

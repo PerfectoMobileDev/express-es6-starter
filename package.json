@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Seed project for easily getting started with express for es6",
   "scripts": {
-    "start": "nodemon ./server.js --exec babel-node",
+    "start": "nodemon -V -e 'js,jsx' ./server.js --exec babel-node",
     "build": "babel . -d dist --presets es2015,stage-2 --ignore spec.js,node_modules",
     "serve": "node dist/server.js",
     "start_babel": "babel-node ./server.js --preset=babel-preset-es2015",
@@ -27,6 +27,7 @@
     "lodash": "^4.15.0",
     "mongoose": "^4.8.6",
     "morgan": "^1.8.2",
+    "oy-vey": "^0.11.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-html-email": "^3.0.0",

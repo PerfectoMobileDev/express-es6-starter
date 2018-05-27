@@ -21,7 +21,7 @@ controller.sendEmail = (req, res) => {
         const mailOptions = {
             from: FROM,
             to: TO,
-            subject: SUBJECT,
+            subject: SUBJECT + req.body.name,
             html: html
         };
         res.send('Sending email..');

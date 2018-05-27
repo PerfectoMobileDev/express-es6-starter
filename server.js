@@ -1,18 +1,18 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import logger from './core/logger/app-logger'
-import morgan from 'morgan'
-import config from './core/config/config.dev'
-import { getEmail } from './jobs-email/jobs';
+import logger from './core/logger/app-logger';
+import morgan from 'morgan';
+import config from './core/config/config.dev';
+import {getEmail} from './jobs-email/jobs';
+import emailController from "./controllers/emails.controller";
 
 // import mails from './routes/mail.route'
 // import connectToDb from './db/connect'
 
-
 const port = config.serverPort;
 logger.stream = {
-    write: function(message, encoding){
+    write: function (message, encoding) {
         logger.info(message);
     }
 };
@@ -22,8 +22,8 @@ logger.stream = {
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(morgan("dev", { "stream": logger.stream }));
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(morgan("dev", {"stream": logger.stream}));
 
 // app.use('/mails', mails);
 
@@ -33,12 +33,12 @@ app.get('/', (req, res) => {
 });
 
 //Index route
-app.get('/mail', (req, res) => {
-  res.send('Some email..');
+app.post('/mail', (req, res) => {
+     emailController.sendEmail(req, res);
 });
 
 app.get('/mail2', (req, res) => {
-  res.send(getEmail);
+    res.send(getEmail);
 });
 
 app.listen(port, () => {

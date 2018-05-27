@@ -22,23 +22,24 @@ const Header = (props) => {
           <TD>
             <EmptySpace height={10} />
 
-            {/* Text area, could be another component, i.e. HeroText */}
-            <Table width="100%">
-              <TBody>
-                <TR>
-                  <TD width="20"><EmptySpace height="20" /></TD>
-                  <TD
-                    align="left"
-                    style={{color: props.color, fontFamily: 'Arial'}}>
-                    <Img alt="Perfecto"
-                         style={{fontSize: '20px', fontFamily: 'sans-serif', fontWeight: 800}}
-                         width={111}
-                         height={36}>
-                    </Img>
-                  </TD>
-                </TR>
-              </TBody>
-            </Table>
+                    {/* Text area, could be another component, i.e. HeroText */}
+                    <Table width="100%">
+                        <TBody>
+                        <TR>
+                            <TD width="20"><EmptySpace height="20"/></TD>
+                            <TD
+                                align="left"
+                                style={{color: props.color, fontFamily: 'Arial'}}>
+                                <Img alt="Perfecto"
+                                     style={{fontSize: '20px', fontFamily: 'sans-serif', fontWeight: 800}}
+                                     width={111}
+                                     height={36}
+                                     src="cid:logo">
+                                </Img>
+                            </TD>
+                        </TR>
+                        </TBody>
+                    </Table>
 
             <EmptySpace height={10} />
           </TD>

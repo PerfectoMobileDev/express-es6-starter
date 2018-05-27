@@ -1,33 +1,36 @@
-import logger from '../core/logger/app-logger'
-import sendEmail from '../models/emailSender'
-
+import logger from '../core/logger/app-logger';
+import sendEmail from '../models/emailSender';
+import path from 'path';
+import {getMail3} from "../jobs-email3/jobs3";
 
 const controller = {};
 const FROM = 'hackathon.perfecto@gmail.com';
-const TO = 'hackathon.perfecto@gmail.com';
+const TO = 'ortala@perfectomobile.com';
 
 const SUBJECT = 'Reporting Summary';
-
- const buildHtml = () => {
-    return '<br> this is my html </br>';
-};
 
 controller.sendEmail = (req, res) => {
      logger.info('preparing to send email');
     try {
         logger.info('building html');
-        const html = buildHtml();//send additional needed data from request
+        const html = getMail3();//send additional needed data from request
         logger.info('constructing mail options');
+        const pathToImage = path.join(__dirname , '/../jobs-email3/images/');
         const mailOptions = {
             from: FROM,
             to: TO,
             subject: SUBJECT + req.body.name,
-            html: html
+            html: html,
+            attachments: [{
+                filename: 'logo.png',
+                path: pathToImage + 'logo.png',
+                cid: 'logo'
+            }]
         };
         res.send('Sending email..');
         sendEmail(mailOptions);
     }
-    catch(err) {
+    catch (err) {
         logger.error('Error in sending email - ' + err);
         res.send('Got error in sending email');
     }

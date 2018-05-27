@@ -27,6 +27,9 @@
     "lodash": "^4.15.0",
     "mongoose": "^4.8.6",
     "morgan": "^1.8.2",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-html-email": "^3.0.0",
     "winston": "^2.3.1",
     "winston-daily-rotate-file": "^1.4.6"
   },

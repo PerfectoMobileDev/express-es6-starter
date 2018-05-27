@@ -4,6 +4,8 @@ import cors from "cors";
 import logger from './core/logger/app-logger'
 import morgan from 'morgan'
 import config from './core/config/config.dev'
+import { getEmail } from './jobs-email/jobs';
+
 // import mails from './routes/mail.route'
 // import connectToDb from './db/connect'
 
@@ -33,6 +35,10 @@ app.get('/', (req, res) => {
 //Index route
 app.get('/mail', (req, res) => {
   res.send('Some email..');
+});
+
+app.get('/mail2', (req, res) => {
+  res.send(getEmail);
 });
 
 app.listen(port, () => {

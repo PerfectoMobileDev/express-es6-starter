@@ -7,7 +7,13 @@ export default (props) => {
     <Table
       width="100%"
       align="center"
-      style={{WebkitTextSizeAdjust: '100%', msTextSizeAdjust: '100%', msoTableLspace: '0pt', msoTableRspace: '0pt', borderCollapse: 'collapse', margin: '0px auto'}}>
+      style={{WebkitTextSizeAdjust: '100%',
+        msTextSizeAdjust: '100%',
+        msoTableLspace: '0pt',
+        msoTableRspace: '0pt',
+        borderCollapse: 'collapse',
+        margin: '0px auto',
+        backgroundColor: '#edeff4'}}>
       <TBody>
         <TR>
           <TD align="center">
@@ -16,7 +22,13 @@ export default (props) => {
             <Table
               width="600"
               align="center"
-              style={{WebkitTextSizeAdjust: '100%', msTextSizeAdjust: '100%', msoTableLspace: '0pt', msoTableRspace: '0pt', borderCollapse: 'collapse', margin: '0px auto'}}>
+              style={{WebkitTextSizeAdjust: '100%',
+                msTextSizeAdjust: '100%',
+                msoTableLspace: '0pt',
+                msoTableRspace: '0pt',
+                borderCollapse: 'collapse',
+                margin: '0px auto',
+                backgroundColor: '#ffffff'}}>
               <TBody>
                 <TR>
                   <TD>

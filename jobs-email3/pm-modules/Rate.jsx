@@ -7,7 +7,6 @@ import EmptySpace from '../modules/EmptySpace.jsx';
 const Rate = (props) => {
   const textStyle = {
     color: '#42444c',
-    backgroundColor: '#eeeeee',
     fontFamily: 'Arial',
     fontSize: '18px'
   };

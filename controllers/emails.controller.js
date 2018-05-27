@@ -1,8 +1,9 @@
-import { getMail3 } from '../jobs-email3/jobs3';
+import path from 'path';
+
 import logger from '../core/logger/app-logger';
 import sendEmail from '../models/emailSender';
-import path from 'path';
-import {getMail3} from "../jobs-email3/jobs3";
+import { getMail3 } from "../jobs-email3/jobs3";
+
 
 const controller = {};
 const FROM = 'hackathon.perfecto@gmail.com';

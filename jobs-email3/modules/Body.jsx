@@ -4,27 +4,45 @@ import {Table, TBody, TR, TD} from 'oy-vey';
 import EmptySpace from './EmptySpace.jsx';
 
 
-export default (props) => {
+const Body = (props) => {
+  const spaceStyle = {
+    lineHeight: '1px',
+    fontSize: '1px'
+  };
+
   const textStyle = {
     color: '#42444c',
-    backgroundColor: '#eeeeee',
-    fontFamily: 'Arial',
+    fontFamily: 'Helvetica',
     fontSize: '18px'
   };
 
   return (
-    <Table width="100%">
+    <Table width="100%"
+           style={{backgroundColor: '#ffffff'}}>
       <TBody>
         <TR>
           <TD
+            height="1"
+            width="20"
+            style={spaceStyle}>&nbsp;</TD>
+
+          <TD
             align="center"
             style={textStyle}>
-            <EmptySpace height={40} />
+            <EmptySpace height={15} />
             {props.children}
-            <EmptySpace height={40} />
+            <EmptySpace height={15} />
           </TD>
+
+          <TD
+            height="1"
+            width="20"
+            style={spaceStyle}>&nbsp;</TD>
+
         </TR>
       </TBody>
     </Table>
   );
 };
+
+export default Body;

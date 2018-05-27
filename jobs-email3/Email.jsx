@@ -11,22 +11,20 @@ import Bars from './pm-modules/Bars';
 import Rate from './pm-modules/Rate';
 
 
+const Email = ({name, history}) => {
+  return (
+    <Layout>
+      <Header color="#ffffff"/>
 
+      <Body>
+      <Info name={name}/>
+      <Rate/>
+      <Bars/>
+      </Body>
 
-export class HelloWorldEmail extends React.Component {
-  render() {
-    return (
-      <Layout>
-        <Header color="#ffffff" />
+      <Footer color="#134ac0"/>
+    </Layout>
+  );
+};
 
-        <Body>
-          <Info/>
-          <Rate/>
-          <Bars/>
-        </Body>
-
-        <Footer color="#134ac0" />
-      </Layout>
-    );
-  }
-}
+export default Email;

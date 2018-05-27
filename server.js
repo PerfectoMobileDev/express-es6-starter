@@ -5,7 +5,7 @@ import logger from './core/logger/app-logger';
 import morgan from 'morgan';
 import config from './core/config/config.dev';
 import emailController from "./controllers/emails.controller";
-import { getEmail } from './jobs-email/jobs';
+// import { getEmail } from './jobs-email/jobs';
 import { getMail3 } from './jobs-email3/jobs3';
 
 // import mails from './routes/mail.route'
@@ -33,20 +33,15 @@ app.get('/', (req, res) => {
     res.send('Invalid endpoint!');
 });
 
-//Index route
 app.post('/mail', (req, res) => {
      emailController.sendEmail(req, res);
-});
-
-app.get('/mail2', (req, res) => {
-    res.send(getEmail);
 });
 
 app.get('/mail3', (req, res) => {
   res.set('Cache-Control', 'no-cache, no-store, must-revalidate');
   res.set('Pragma', 'no-cache');
   res.set('Expires', '0');
-  res.send(getMail3());
+  res.send(getMail3(req.body));
 });
 
 app.listen(port, () => {

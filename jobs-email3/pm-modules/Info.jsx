@@ -1,10 +1,10 @@
 import React from 'react';
 import {Table, TBody, TR, TD} from 'oy-vey';
 
-import EmptySpace from './EmptySpace.jsx';
+import EmptySpace from '../modules/EmptySpace.jsx';
 
 
-export default (props) => {
+const Info = (props) => {
   const textStyle = {
     color: '#42444c',
     backgroundColor: '#eeeeee',
@@ -19,12 +19,14 @@ export default (props) => {
           <TD
             align="center"
             style={textStyle}>
-            <EmptySpace height={40} />
-            {props.children}
-            <EmptySpace height={40} />
+            <EmptySpace height={20} />
+            Here you go, your build is ready!
+            <EmptySpace height={80} />
           </TD>
         </TR>
       </TBody>
     </Table>
   );
 };
+
+export default Info;

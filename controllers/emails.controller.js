@@ -1,7 +1,8 @@
 import { getMail3 } from '../jobs-email3/jobs3';
-import logger from '../core/logger/app-logger'
-import sendEmail from '../models/emailSender'
-
+import logger from '../core/logger/app-logger';
+import sendEmail from '../models/emailSender';
+import path from 'path';
+import {getMail3} from "../jobs-email3/jobs3";
 
 const controller = {};
 const FROM = 'hackathon.perfecto@gmail.com';
@@ -16,16 +17,22 @@ controller.sendEmail = (req, res) => {
         logger.info('building html');
         const html = getMail3(req.body);
         logger.info('constructing mail options');
+        const pathToImage = path.join(__dirname , '/../jobs-email3/images/');
         const mailOptions = {
             from: FROM,
             to: TO,
             subject: SUBJECT,
-            html: html
+            html: html,
+            attachments: [{
+                filename: 'logo.png',
+                path: pathToImage + 'logo.png',
+                cid: 'logo'
+            }]
         };
-        sendEmail(mailOptions);
         res.send('Sending email..');
+        sendEmail(mailOptions);
     }
-    catch(err) {
+    catch (err) {
         logger.error('Error in sending email - ' + err);
         res.send('Got error in sending email');
     }

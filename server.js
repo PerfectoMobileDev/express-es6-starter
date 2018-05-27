@@ -4,8 +4,9 @@ import cors from "cors";
 import logger from './core/logger/app-logger'
 import morgan from 'morgan'
 import config from './core/config/config.dev'
-import cars from './routes/cars.route'
-import connectToDb from './db/connect'
+// import mails from './routes/mail.route'
+// import connectToDb from './db/connect'
+
 
 const port = config.serverPort;
 logger.stream = {
@@ -14,7 +15,7 @@ logger.stream = {
     }
 };
 
-connectToDb();
+// connectToDb();
 
 const app = express();
 app.use(cors());
@@ -22,13 +23,19 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan("dev", { "stream": logger.stream }));
 
-app.use('/cars', cars);
+// app.use('/mails', mails);
 
 //Index route
 app.get('/', (req, res) => {
     res.send('Invalid endpoint!');
 });
 
+//Index route
+app.get('/mail', (req, res) => {
+  res.send('Some email..');
+});
+
 app.listen(port, () => {
     logger.info('server started - ', port);
 });
+

@@ -11,10 +11,10 @@ export class HelloWorldEmail extends React.Component {
   render() {
     return (
       <Layout>
-        <Header color="#425563" />
+        <Header color="#ffffff" />
 
         <Body>
-          Hey there, hope you’re finding Oy useful!
+        Here you go, your build is ready!
         </Body>
 
         <Footer color="#134ac0" />

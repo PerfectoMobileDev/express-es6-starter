@@ -4,7 +4,6 @@ import cors from "cors";
 import logger from './core/logger/app-logger';
 import morgan from 'morgan';
 import config from './core/config/config.dev';
-import {getEmail} from './jobs-email/jobs';
 import emailController from "./controllers/emails.controller";
 import { getEmail } from './jobs-email/jobs';
 import { getMail3 } from './jobs-email3/jobs3';

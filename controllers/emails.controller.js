@@ -10,7 +10,7 @@ const SUBJECT = 'Reporting Summary';
 
  const buildHtml = () => {
     return '<br> this is my html </br>';
-}
+};
 
 controller.sendEmail = (req, res) => {
      logger.info('preparing to send email');

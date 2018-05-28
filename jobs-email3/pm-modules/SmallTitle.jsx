@@ -13,7 +13,7 @@ const SmallTitle = ({title}) => {
     <Table width="100%">
       <TBody>
       <TR style={{padding: '0, 10px'}}>
-        <TD height="1" width="20" style={spaceStyle}/>
+        <TD height="1" width="30" style={spaceStyle}/>
 
         <TD
           align="center"
@@ -23,7 +23,7 @@ const SmallTitle = ({title}) => {
           <EmptySpace height={'10px'}/>
         </TD>
 
-        <TD height="1" width="20" style={spaceStyle}/>
+        <TD height="1" width="30" style={spaceStyle}/>
       </TR>
       </TBody>
     </Table>

@@ -20,13 +20,13 @@ const Status = ({data, width}) => {
       <TBody>
       <TR align='center'
           style={textStyle}>
-        <TD style={{fontSize: '26px', fontWeight: 600}}>
+        <TD style={{fontSize: '36px'}}>
           {data.value}
         </TD>
       </TR>
       <TR align='center'
           style={textStyle}>
-        <TD  style={{fontSize: '18px', fontWeight: 400}}>{data.name}</TD>
+        <TD  style={{fontSize: '12px'}}>{data.name}</TD>
       </TR>
       </TBody>
     </Table>

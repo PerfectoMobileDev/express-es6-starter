@@ -5,11 +5,6 @@ import EmptySpace from './EmptySpace.jsx';
 
 
 const Body = (props) => {
-  const spaceStyle = {
-    lineHeight: '1px',
-    fontSize: '1px'
-  };
-
   const textStyle = {
     color: '#42444c',
     fontFamily: 'Helvetica',

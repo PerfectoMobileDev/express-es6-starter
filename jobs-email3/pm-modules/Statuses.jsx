@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Table, TBody, TD, TR } from 'oy-vey';
 import Status from './Status';
+import { spaceStyle } from './SmallTitle';
 
 const Statuses = (props) => {
   const {statuses} = props;
@@ -11,12 +12,16 @@ const Statuses = (props) => {
     <Table width="100%">
       <TBody>
       <TR>
+        <TD height="1" width="12%" style={spaceStyle}/>
+
         {statuses.map((status, key) =>
-          <TD key={key} align="center" heigh="40px">
+          <TD key={key} align="center" height="40px">
             <Status data={status} width={width}/>
           </TD>
         )}
-      </TR>
+
+        <TD height="1" width="20%" style={spaceStyle}/>
+        </TR>
       </TBody>
     </Table>
   );

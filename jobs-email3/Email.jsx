@@ -10,6 +10,7 @@ import Info from './pm-modules/Info';
 import Bars from './pm-modules/Bars';
 import Rate from './pm-modules/Rate';
 import SmallTitle from './pm-modules/SmallTitle';
+import EmptySpace from './modules/EmptySpace';
 
 
 const Email = ({name, history}) => {
@@ -19,9 +20,10 @@ const Email = ({name, history}) => {
 
       <Body>
       <Info name={name}/>
-      <SmallTitle title={'RATE'} margin={10}/>
+      <SmallTitle title={'RATE'}/>
       <Rate/>
       <SmallTitle title={'HISTORY'}/>
+      <EmptySpace height={20} />
       <Bars history={history}/>
       </Body>
 

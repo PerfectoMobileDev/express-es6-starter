@@ -12,7 +12,7 @@ const Statuses = (props) => {
     <Table width="100%">
       <TBody>
       <TR>
-        <TD height="1" width="12%" style={spaceStyle}/>
+        <TD height="1" width="20%" style={spaceStyle}/>
 
         {statuses.map((status, key) =>
           <TD key={key} align="center" height="40px">

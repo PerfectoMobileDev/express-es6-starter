@@ -19,9 +19,9 @@ const Rate = (props) => {
         style={textStyle}>
         <EmptySpace height={30}/>
         <Statuses statuses={[
-          {name: 'total', value: 95},
-          {name: 'success', value: 90},
-          {name: 'failed', value: 5}
+          {name: 'TESTS', value: 95},
+          {name: 'SUCCESS', value: 90},
+          {name: 'FAILED', value: 5}
         ]}/>
       </TR>
       </TBody>

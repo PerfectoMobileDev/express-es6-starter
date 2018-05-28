@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { Table, TBody, TD, TR } from 'oy-vey';
 
 const colors = {
-  'total': '#222',
-  'success': '#82bc41',
-  'failed': '#c8102e',
+  'TESTS': '#222',
+  'SUCCESS': '#82bc41',
+  'FAILED': '#c8102e',
   'unknown': '#BBB'
 };
 

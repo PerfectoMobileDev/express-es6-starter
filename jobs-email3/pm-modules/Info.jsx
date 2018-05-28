@@ -25,7 +25,7 @@ const Info = ({name}) => {
       <TR>
         <TD
           align="left">
-          <EmptySpace height={25}/>
+          <EmptySpace height={30}/>
           <A style={{color: '#0086BF', fontSize: '20px'}}
              href="https://branchtest.reporting.perfectomobile.com/library">
             {name}

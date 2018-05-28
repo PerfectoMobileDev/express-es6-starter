@@ -29,9 +29,9 @@ const Body = (props) => {
           <TD
             align="center"
             style={textStyle}>
-            <EmptySpace height={15} />
+            <EmptySpace height={20} />
             {props.children}
-            <EmptySpace height={15} />
+            <EmptySpace height={40} />
           </TD>
 
           <TD

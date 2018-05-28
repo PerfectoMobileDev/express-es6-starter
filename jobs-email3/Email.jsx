@@ -9,6 +9,7 @@ import Footer from './modules/Footer.jsx';
 import Info from './pm-modules/Info';
 import Bars from './pm-modules/Bars';
 import Rate from './pm-modules/Rate';
+import SmallTitle from './pm-modules/SmallTitle';
 
 
 const Email = ({name, history}) => {
@@ -19,6 +20,7 @@ const Email = ({name, history}) => {
       <Body>
       <Info name={name}/>
       <Rate/>
+      <SmallTitle title={'HISTORY'}/>
       <Bars history={history}/>
       </Body>
 

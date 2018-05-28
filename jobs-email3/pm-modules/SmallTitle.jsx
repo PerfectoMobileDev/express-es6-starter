@@ -13,9 +13,9 @@ const SmallTitle = ({title}) => {
           <TD
             align="center"
             style={{color: '#aaaaaa', fontSize: '12px', fontWeight: 100, fontFamily: 'Helvetica'}}>
-            <EmptySpace height={20} />
+            <EmptySpace height={40} />
             {title}
-            <EmptySpace height={20} />
+            <EmptySpace height={40} />
           </TD>
         </TR>
       </TBody>

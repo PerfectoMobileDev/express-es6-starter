@@ -5,8 +5,8 @@ import Email from './Email.jsx';
 
 
 
-// export const getMail3 = ({name, history}) => {
-export const getMail3 = () => {
+export const getMail3 = ({name, history}) => {
+// export const getMail3 = () => {
   return Oy.renderTemplate(<Email name={name} history={history}/>, {
     title: 'Perfecto Report',
     previewText: 'Perfecto Report'

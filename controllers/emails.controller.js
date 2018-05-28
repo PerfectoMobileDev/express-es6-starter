@@ -9,7 +9,7 @@ const controller = {};
 const FROM = 'hackathon.perfecto@gmail.com';
 const TO = 'hackathon.perfecto@gmail.com';
 
-const SUBJECT = 'Reporting Summary';
+const SUBJECT = 'Reporting Job Summary';
 
 
 controller.sendEmail = (req, res) => {

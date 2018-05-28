@@ -47,7 +47,7 @@ const Footer = (props) => {
 
                     <A
                       style={{color: '#ffffff', fontWeight: 'bold', textDecoration: 'none', fontSize: '14px'}}
-                      href="https://branchtest.reporting.perfectomobile.com/library">VIEW BUILD</A>
+                      href="https://branchtest.reporting.perfectomobile.com/library">CHECK IT OUT</A>
 
                     <EmptySpace height="10" />
                   </TD>

@@ -48,7 +48,7 @@ export default (props) => {
         </TR>
 
         <TR>
-          <TD><EmptySpace height="40"/></TD>
+          <TD><EmptySpace height="80"/></TD>
         </TR>
 
         {/* We don't care to run validation on this img tag, so leave as is

@@ -31,7 +31,7 @@ const Header = (props) => {
                                 align="left"
                                 style={{color: props.color, fontFamily: 'Arial'}}>
                                 <Img alt="Perfecto"
-                                     style={{fontSize: '20px', fontFamily: 'open-sans', fontWeight: 800}}
+                                     style={{fontSize: '24px', fontFamily: 'open-sans', fontWeight: 800}}
                                      width={111}
                                      height={36}
                                      src="cid:logo">

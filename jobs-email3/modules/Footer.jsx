@@ -18,7 +18,7 @@ const Footer = (props) => {
 
   return (
     <Table
-      width="100%"
+      width="600"
       style={style}>
       <TBody>
 

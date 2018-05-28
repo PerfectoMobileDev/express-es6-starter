@@ -1,10 +1,6 @@
 import React from 'react';
-
-import SmallTitle from './SmallTitle';
 import Bar from './Bar';
-import { Table, TBody, TR, TD } from 'oy-vey';
-
-import EmptySpace from '../modules/EmptySpace.jsx';
+import { Table, TBody, TD, TR } from 'oy-vey';
 
 
 const Bars = ({history}) => {

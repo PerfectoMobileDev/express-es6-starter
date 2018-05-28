@@ -22,22 +22,12 @@ const Body = (props) => {
       <TBody>
         <TR>
           <TD
-            height="1"
-            width="20"
-            style={spaceStyle}>&nbsp;</TD>
-
-          <TD
             align="center"
             style={textStyle}>
             <EmptySpace height={20} />
             {props.children}
             <EmptySpace height={40} />
           </TD>
-
-          <TD
-            height="1"
-            width="20"
-            style={spaceStyle}>&nbsp;</TD>
 
         </TR>
       </TBody>

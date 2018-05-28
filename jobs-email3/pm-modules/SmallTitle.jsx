@@ -4,7 +4,7 @@ import {Table, TBody, TR, TD} from 'oy-vey';
 import EmptySpace from '../modules/EmptySpace.jsx';
 
 
-const SmallTitle = ({title}) => {
+const SmallTitle = ({title, margin = 40}) => {
 
   return (
     <Table width="100%">
@@ -13,9 +13,9 @@ const SmallTitle = ({title}) => {
           <TD
             align="center"
             style={{color: '#aaaaaa', fontSize: '12px', fontWeight: 100, fontFamily: 'Helvetica'}}>
-            <EmptySpace height={40} />
+            <EmptySpace height={margin} />
             {title}
-            <EmptySpace height={40} />
+            <EmptySpace height={margin} />
           </TD>
         </TR>
       </TBody>

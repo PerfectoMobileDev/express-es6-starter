@@ -19,6 +19,7 @@ const Email = ({name, history}) => {
 
       <Body>
       <Info name={name}/>
+      <SmallTitle title={'RATE'} margin={10}/>
       <Rate/>
       <SmallTitle title={'HISTORY'}/>
       <Bars history={history}/>
